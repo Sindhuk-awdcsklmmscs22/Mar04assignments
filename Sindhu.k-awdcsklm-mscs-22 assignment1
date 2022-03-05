@@ -1,0 +1,13 @@
+# print duplicates from a list of integers
+
+#function
+def duplicate(li):
+    n=len(li)
+    d=[]
+    for i in range(n):
+        k = i + 1
+        for j in range(k,n):
+            if li[i] == li[j] and li[i] not in d:
+                d.append(li[i])
+    return d
+print("Duplicate integeres: ",duplicate(li))
